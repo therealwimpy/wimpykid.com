@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<style>
+
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', 'sans-serif';;
+	box-sizing: border-box;
+}
+
+.hero{
+	height: 100vh;
+	width: 100%;
+	background-color:black ;
+	background-size: cover;
+	background-position: center;
+}
+
+header {
+	background-color: #191919;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 200px;
+	
+}
+
+.logo{
+	font-family: 'Poppins', 'sans-serif';
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	font-size: 3em;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translateY(-50%);
+}
+
+.logo-clr{
+	font-family: 'Poppins', 'sans-serif';
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 0px 100px;
+	position: absolute;
+	right: 10%;
+}
+
+col2{
+	color: #FFA500;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 5px  30px;
+}
+
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+nav ul li a:hover{
+	color: #FFA500;
+}
+
+.content{
+	font-family: 'Poppins', 'sans-serif';
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translateY(-50%);
+}
+
+h1{	
+	font-family: 'Poppins', 'sans-serif';
+	color: white;
+	margin: 20px 0px 20px;
+	font-size: 75px;
+}
+
+h3{
+	color: white;
+	font-size: 30px;
+	margin-bottom: 0px;
+}
+
+.about{
+	width: 100%;
+	padding: 120px 0px;
+	background-color: #191919;
+}
+
+.about img{
+	height: auto;
+	width: 430px;
+}
+
+.about-text{
+	width: 550px;
+}
+
+
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: white;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+.button{
+	background-color:#FFA500;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.button:hover{
+	background-color: transparent;
+	border: 2px solid #FFA500;
+	cursor: pointer;
+}
+
+.internship{
+	background: #101010;
+	width: 100%;
+	padding: 70px 0px;
+
+}
+
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+.card{
+	height: 250px;
+	width: 250px;
+	padding: 10px 35px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	transition: 0.7s ease;
+}
+
+.card i{
+	font-size: 30px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: white;
+
+}
+
+.card:hover {
+    	transform: scale(1.1);
+}
+
+.card .icon {
+    	color: #3a6cf4;
+    	font-size: 8em;
+    	text-align: center;
+}
+
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color: white;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+</style>
+
+<body>
+	<!----HEADER---->
+	<header>
+		<a class="logo" href="#"><col2>C</col2>liff.</a>
+			<nav>
+				<ul>
+					<li><a type="button" href="#">Home</a></li>
+					<li><a type="button" href="#about">About Me</a></li>
+					<li><a type="button" href="#internship"><col2>My Internships</col2></a></li>
+					<li><a type="button" href="#contact-me">Contact Me</a></li>
+				</ul>
+
+			</nav>
+    	</header>
+
+	<div class="internship" id="internship">
+		<div class="title">
+			<h2>Webinars/ <col2>Certification</col2></h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Company<br></br></h5>
+				<div class="pra">
+					<p style="text-align: center;">
+						<a href="main.html#internship" class="button">Back</a>
+					</p>
+				</div>
+			</div>
+
+</body>
+</html>
